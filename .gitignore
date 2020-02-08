@@ -1,0 +1,6 @@
+notes/*.pdf
+experiments/log/*
+
+# python
+*.pyc
+__pycache__
