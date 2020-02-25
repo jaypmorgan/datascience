@@ -3,7 +3,7 @@
 
 \RequirePackage[left]{lineno}
 \RequirePackage{fancyhdr}
-\RequirePackage[a4paper, bottom=0.9in, top=1in, marginparwidth=100pt, textwidth=400pt, inner=40pt, twoside, marginparsep=20pt]{geometry}
+\RequirePackage[a4paper, bottom=0.9in, top=1in, marginparwidth=80pt, textwidth=425pt, inner=40pt, twoside, marginparsep=20pt]{geometry}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{etoolbox}
 
@@ -25,6 +25,12 @@
 \setlength{\parskip}{1em}
 \setlength{\parindent}{0em}
 \newcommand{\note}[1]{\marginpar{#1}}
+
+% remove the 'abstract' title
+\usepackage{abstract}
+\renewcommand{\abstractname}{}    % clear the title
+\renewcommand{\absnamepos}{empty} % originally center
+\renewcommand{\abstracttextfont}{\normalfont\small\noindent\ignorespaces}  % remove p-indent
 
 \linenumbers
 % no line numbers on headings
