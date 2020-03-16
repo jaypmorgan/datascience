@@ -1,0 +1,3 @@
+[submodule "notes/includes"]
+	path = notes/includes
+	url = git@github.com:jaypmorgan/notetaking.git
