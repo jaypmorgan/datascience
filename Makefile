@@ -1,21 +1,21 @@
 # template Makefile
 
 # update and install the DS repo files
-.PHONY build
-install :
+.PHONY: install
+install:
 	git submodule update --init --recursive --jobs 4
 	git pull --recurse-submodules
 	bash includes/install.sh
 
-.PHONY data
-data :
+.PHONY: data
+data:
 	@echo Making data...
 
-test :
+test:
 	@echo Running preflight tests...
 
-experiments :  # should depend on data sources & tests
+experiments:  # should depend on data sources & tests
 	@echo Running experiments...
 
-reports :  # again should depend on data
+reports:  # again should depend on data
 	@echo Compiling reports
