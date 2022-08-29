@@ -1,6 +1,0 @@
-[submodule "notes/includes"]
-	path = notes/includes
-	url = git@github.com:jaypmorgan/notetaking.git
-[submodule "includes"]
-	path = includes
-	url = git@github.com:jaypmorgan/researchpipeline.git
